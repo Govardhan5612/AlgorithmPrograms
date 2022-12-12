@@ -7,8 +7,9 @@ public class PrimeNumbersInRange {
     /**
      * Check weather number is prime number
      */
-    public void primeNumber(int number) {
+    public int primeNumber(int number) {
         boolean status = true;
+        int primeNumber = 100;
         if (number == 0 || number == 1) {
             status = false;
         } else if (number == 2) {
@@ -22,7 +23,10 @@ public class PrimeNumbersInRange {
             }
         }
         if (status == true) {
-            System.out.print(number + " ,");
+            primeNumber = number;
+            return primeNumber;
+        } else {
+            return primeNumber;
         }
     }
 
@@ -34,7 +38,10 @@ public class PrimeNumbersInRange {
         int lastNumber = 1000;//final number
         PrimeNumbersInRange prime = new PrimeNumbersInRange();
         for (int i = firstNumber; i <= lastNumber; i++) {
-            prime.primeNumber(i);
+            int number = prime.primeNumber(i);
+            if (number != 100) {
+                System.out.print(i + " ,");
+            }
         }
     }
 }
