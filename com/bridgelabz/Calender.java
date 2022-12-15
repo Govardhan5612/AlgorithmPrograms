@@ -85,7 +85,6 @@ public class Calender {
             return false;
         }
     }
-
     public static int numberOfDaysInMonth(int year, int month) {
         /**
          * This method return days in month
