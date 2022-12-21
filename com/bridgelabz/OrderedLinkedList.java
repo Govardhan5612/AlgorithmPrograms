@@ -4,6 +4,9 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+/**
+ * @author Govardhan Redyy
+ */
 public class OrderedLinkedList {
     /**
      * create a linked list add and remove operations are used
@@ -42,7 +45,6 @@ public class OrderedLinkedList {
        Collections.sort(linkedList);
        System.out.println("Ordered linked list : " + linkedList);
    }
-
     public static void main(String[] args) {
         Integer [] array = {12,56,74,51,65,41,52,63,65,48};
         OrderedLinkedList list = new OrderedLinkedList();
