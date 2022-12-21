@@ -140,7 +140,7 @@ public class Calender {
         }
         for (int i = 1; i <= monthDays; i++) {
             if (i < 10) {
-                System.out.print("  0" + i);
+                System.out.print("   " + i);
             } else {
                 System.out.print("  " + i);
             }
